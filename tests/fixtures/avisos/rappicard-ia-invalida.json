@@ -1,0 +1,21 @@
+{
+  "descripcion": "La IA devuelve algo que no cumple el esquema",
+  "aviso": {
+    "subject": "Compra aprobada",
+    "from": "RappiCard <no-reply@mail.rappicard.co>",
+    "date": "Tue, 06 Oct 2026 19:30:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@mail.rappicard.co; dmarc=pass",
+    "text": "Se aprobó tu compra por $45.000 en COMERCIO PRUEBA.",
+    "message_id": "<fx-rappicard-ia-invalida@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "necesita_ia",
+    "banco": "rappicard"
+  },
+  "ia": {
+    "hola": "mundo"
+  },
+  "esperado_ia": {
+    "revisar": "ia_invalida"
+  }
+}

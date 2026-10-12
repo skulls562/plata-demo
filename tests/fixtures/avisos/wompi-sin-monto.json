@@ -1,0 +1,15 @@
+{
+  "descripcion": "Aprobada pero sin monto legible",
+  "aviso": {
+    "subject": "Transacción APROBADA en TIENDA PRUEBA - ref. W0000-0003",
+    "from": "Wompi <no-reply@wompi.co>",
+    "date": "Tue, 06 Oct 2026 14:33:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@wompi.co; spf=pass; dmarc=pass",
+    "text": "Tu pago fue aprobado. Gracias.",
+    "message_id": "<fx-wompi-sin-monto@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "necesita_ia",
+    "banco": "wompi"
+  }
+}

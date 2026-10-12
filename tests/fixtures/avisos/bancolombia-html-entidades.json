@@ -1,0 +1,25 @@
+{
+  "descripcion": "Correo en HTML con entidades",
+  "aviso": {
+    "subject": "Alertas y Notificaciones",
+    "from": "Bancolombia <alertasynotificaciones@ayn.notificacionesbancolombia.com>",
+    "date": "Tue, 06 Oct 2026 07:45:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@ayn.notificacionesbancolombia.com; spf=pass; dmarc=pass",
+    "text": "<html><body><p>Bancolombia: Compraste $20.000,00 en PANADERIA &amp; CAF&Eacute; con tu T.Deb *0000, el 06/10/2026 a las 07:45.</p><p>&nbsp;</p></body></html>",
+    "message_id": "<fx-bancolombia-html-entidades@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "leido",
+    "datos": {
+      "confianza": "regla",
+      "banco": "bancolombia",
+      "tipo": "compra",
+      "sentido": "salida",
+      "monto": 20000,
+      "comercio": "PANADERIA & CAFÉ",
+      "fecha": "2026-10-06",
+      "hora": "07:45",
+      "medio": "debito"
+    }
+  }
+}

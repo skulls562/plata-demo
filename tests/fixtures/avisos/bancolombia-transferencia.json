@@ -1,0 +1,25 @@
+{
+  "descripcion": "Transferencia a una persona (nombre sintético)",
+  "aviso": {
+    "subject": "Alertas y Notificaciones",
+    "from": "Bancolombia <alertasynotificaciones@ayn.notificacionesbancolombia.com>",
+    "date": "Fri, 02 Oct 2026 11:20:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@ayn.notificacionesbancolombia.com; spf=pass; dmarc=pass",
+    "text": "Bancolombia: Transferiste $50.000,00 a PERSONA PRUEBA desde tu cuenta *0000, el 02/10/2026 a las 11:20.",
+    "message_id": "<fx-bancolombia-transferencia@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "leido",
+    "datos": {
+      "confianza": "regla",
+      "banco": "bancolombia",
+      "tipo": "transferencia",
+      "sentido": "salida",
+      "monto": 50000,
+      "comercio": "PERSONA PRUEBA",
+      "fecha": "2026-10-02",
+      "hora": "11:20",
+      "medio": "cuenta"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "descripcion": "Compra con tarjeta débito (ejemplo del SPEC §5.4)",
+  "aviso": {
+    "subject": "Alertas y Notificaciones",
+    "from": "Bancolombia <alertasynotificaciones@ayn.notificacionesbancolombia.com>",
+    "date": "Tue, 06 Oct 2026 13:59:40 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@ayn.notificacionesbancolombia.com; spf=pass; dmarc=pass",
+    "text": "Bancolombia: Compraste $14.730,00 en TIENDA D1 ANT MARINI con tu T.Deb *0000, el 06/10/2026 a las 13:59. Si tienes dudas llama al 018000000000.",
+    "message_id": "<fx-bancolombia-compra-debito@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "leido",
+    "datos": {
+      "confianza": "regla",
+      "banco": "bancolombia",
+      "tipo": "compra",
+      "sentido": "salida",
+      "monto": 14730,
+      "comercio": "TIENDA D1 ANT MARINI",
+      "fecha": "2026-10-06",
+      "hora": "13:59",
+      "medio": "debito"
+    }
+  }
+}

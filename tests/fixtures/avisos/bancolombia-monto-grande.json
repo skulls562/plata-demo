@@ -1,0 +1,25 @@
+{
+  "descripcion": "Monto con millones y centavos",
+  "aviso": {
+    "subject": "Alertas y Notificaciones",
+    "from": "Bancolombia <alertasynotificaciones@ayn.notificacionesbancolombia.com>",
+    "date": "Tue, 06 Oct 2026 12:00:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@ayn.notificacionesbancolombia.com; spf=pass; dmarc=pass",
+    "text": "Bancolombia: Compraste $1.234.567,89 en ALMACEN PRUEBA con tu T.Cred *0000, el 06/10/2026 a las 12:00.",
+    "message_id": "<fx-bancolombia-monto-grande@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "leido",
+    "datos": {
+      "confianza": "regla",
+      "banco": "bancolombia",
+      "tipo": "compra",
+      "sentido": "salida",
+      "monto": 1234568,
+      "comercio": "ALMACEN PRUEBA",
+      "fecha": "2026-10-06",
+      "hora": "12:00",
+      "medio": "credito"
+    }
+  }
+}

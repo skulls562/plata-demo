@@ -1,0 +1,36 @@
+{
+  "descripcion": "DiDi: viaje",
+  "aviso": {
+    "subject": "Tu recibo de DiDi",
+    "from": "DiDi <no-reply@didiglobal.com>",
+    "date": "Tue, 06 Oct 2026 21:40:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@didiglobal.com; dmarc=pass",
+    "text": "Gracias por viajar con DiDi. Total del viaje: $18.500 pagado con tarjeta.",
+    "message_id": "<fx-didi-viaje@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "necesita_ia",
+    "banco": "didi"
+  },
+  "ia": {
+    "es_transaccion": true,
+    "estado": "aprobada",
+    "tipo": "pago",
+    "monto_texto": "$18.500",
+    "comercio": "DiDi",
+    "fecha_texto": null,
+    "hora_texto": null,
+    "medio": "credito"
+  },
+  "esperado_ia": {
+    "banco": "didi",
+    "tipo": "pago",
+    "sentido": "salida",
+    "monto": 18500,
+    "comercio": "DiDi",
+    "fecha": "2026-10-06",
+    "hora": "21:40",
+    "medio": "credito",
+    "confianza": "ia"
+  }
+}

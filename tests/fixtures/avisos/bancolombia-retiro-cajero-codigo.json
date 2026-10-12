@@ -1,0 +1,25 @@
+{
+  "descripcion": "Retiro en cajero cuyo nombre lleva dígito pegado (sin «de tu T.Deb» en el comercio)",
+  "aviso": {
+    "subject": "Alertas y Notificaciones",
+    "from": "Bancolombia <alertasynotificaciones@ayn.notificacionesbancolombia.com>",
+    "date": "Mon, 05 Oct 2026 16:05:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@ayn.notificacionesbancolombia.com; spf=pass; dmarc=pass",
+    "text": "Bancolombia: Retiraste $100.000,00 en CAJERO1 de tu T.Deb *0000 el 05/10/2026 a las 16:05. Si tienes dudas, llamanos al 018000000000.",
+    "message_id": "<fx-bancolombia-retiro-cajero-codigo@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "leido",
+    "datos": {
+      "confianza": "regla",
+      "banco": "bancolombia",
+      "tipo": "retiro",
+      "sentido": "salida",
+      "monto": 100000,
+      "comercio": "CAJERO1",
+      "fecha": "2026-10-05",
+      "hora": "16:05",
+      "medio": "debito"
+    }
+  }
+}

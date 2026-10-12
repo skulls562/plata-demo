@@ -1,0 +1,47 @@
+/* Deudas y saldos. Prefijo `de-`; solo tokens de globals.css. */
+.de-bloque { margin-top: var(--e-7); }
+.de-cab { display: flex; justify-content: space-between; align-items: center; gap: var(--e-3); flex-wrap: wrap; margin-bottom: var(--e-4); }
+.de-cab h2 { font-size: var(--t-lg); letter-spacing: -0.02em; font-weight: 600; }
+
+.de-resumen { display: grid; gap: var(--e-3); }
+.de-resumen > * { min-width: 0; }
+@media (min-width: 900px) {
+  .de-resumen { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr); grid-template-areas: "saldo deuda minimos" "saldo venc venc"; }
+  .de-saldo { grid-area: saldo; }
+  .de-deuda { grid-area: deuda; }
+  .de-minimos { grid-area: minimos; }
+  .de-venc { grid-area: venc; }
+}
+.de-venc-fila { display: flex; justify-content: space-between; align-items: center; gap: var(--e-4); flex-wrap: wrap; margin-top: var(--e-2); }
+.de-venc-nombre { font-size: var(--t-lg); letter-spacing: -0.02em; font-weight: 600; }
+
+.de-dos { display: grid; gap: var(--e-5); }
+.de-dos > * { min-width: 0; }
+@media (min-width: 1000px) { .de-dos { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); align-items: start; } }
+
+.de-fila { display: grid; gap: var(--e-3); padding: var(--e-4) 0; }
+.de-fila + .de-fila { border-top: 1px solid var(--linea); }
+.de-fila-cab { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--e-3); flex-wrap: wrap; }
+.de-fila-nombre { font-size: var(--t-md); font-weight: 600; letter-spacing: -0.02em; display: flex; align-items: center; gap: var(--e-2); flex-wrap: wrap; }
+.de-datos { display: grid; gap: var(--e-3) var(--e-5); grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); }
+.de-datos p { margin: 0; }
+.de-aviso { border-left: 2px solid var(--ambar); padding-left: var(--e-3); color: var(--texto-2); font-size: 0.92rem; }
+.de-aviso[data-tono="ok"] { border-left-color: var(--linea-2); }
+.de-acciones { display: flex; gap: var(--e-2); flex-wrap: wrap; }
+
+.de-simula { display: grid; gap: var(--e-4); align-items: end; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 720px) { .de-simula { grid-template-columns: minmax(0, 20rem) auto; } }
+.de-planes { display: grid; gap: var(--e-4); margin-top: var(--e-5); }
+@media (min-width: 800px) { .de-planes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.de-plan-cab { display: flex; justify-content: space-between; align-items: center; gap: var(--e-2); flex-wrap: wrap; margin-bottom: var(--e-3); }
+.de-plan-cab h3 { font-size: var(--t-md); font-weight: 600; letter-spacing: -0.02em; }
+.de-plan ol { margin: var(--e-3) 0 0 var(--e-5); color: var(--texto-2); }
+.de-plan li { padding: var(--e-1) 0; }
+.de-ahorro { margin-top: var(--e-4); }
+.de-form { display: grid; gap: var(--e-4); }
+.de-form-doble { display: grid; gap: var(--e-4); grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); }
+.de-nota { margin-top: var(--e-7); }
+
+.de-saldo .ui-est-cifra { font-size: clamp(1.8rem, 6vw, 3.6rem); line-height: 0.95; letter-spacing: -0.05em; }
+.de-resumen { align-items: start; }
+@media (min-width: 900px) { .de-saldo { align-self: stretch; } }

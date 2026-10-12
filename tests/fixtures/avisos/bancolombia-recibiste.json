@@ -1,0 +1,25 @@
+{
+  "descripcion": "Ingreso por transferencia recibida",
+  "aviso": {
+    "subject": "Alertas y Notificaciones",
+    "from": "Bancolombia <alertasynotificaciones@ayn.notificacionesbancolombia.com>",
+    "date": "Thu, 01 Oct 2026 08:00:10 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@ayn.notificacionesbancolombia.com; spf=pass; dmarc=pass",
+    "text": "Bancolombia: Recibiste $1.500.000,00 de EMPRESA PRUEBA SAS en tu cuenta *0000, el 01/10/2026 a las 08:00.",
+    "message_id": "<fx-bancolombia-recibiste@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "leido",
+    "datos": {
+      "confianza": "regla",
+      "banco": "bancolombia",
+      "tipo": "ingreso",
+      "sentido": "entrada",
+      "monto": 1500000,
+      "comercio": "EMPRESA PRUEBA SAS",
+      "fecha": "2026-10-01",
+      "hora": "08:00",
+      "medio": "cuenta"
+    }
+  }
+}

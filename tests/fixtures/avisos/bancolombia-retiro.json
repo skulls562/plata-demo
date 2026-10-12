@@ -1,0 +1,25 @@
+{
+  "descripcion": "Retiro en cajero",
+  "aviso": {
+    "subject": "Alertas y Notificaciones",
+    "from": "Bancolombia <alertasynotificaciones@ayn.notificacionesbancolombia.com>",
+    "date": "Sun, 04 Oct 2026 18:05:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@ayn.notificacionesbancolombia.com; spf=pass; dmarc=pass",
+    "text": "Bancolombia: Retiraste $200.000,00 en CAJERO AV 80 con tu T.Deb *0000, el 04/10/2026 a las 18:05.",
+    "message_id": "<fx-bancolombia-retiro@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "leido",
+    "datos": {
+      "confianza": "regla",
+      "banco": "bancolombia",
+      "tipo": "retiro",
+      "sentido": "salida",
+      "monto": 200000,
+      "comercio": "CAJERO AV 80",
+      "fecha": "2026-10-04",
+      "hora": "18:05",
+      "medio": "debito"
+    }
+  }
+}

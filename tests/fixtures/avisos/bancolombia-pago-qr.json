@@ -1,0 +1,25 @@
+{
+  "descripcion": "Pago por código QR a una llave",
+  "aviso": {
+    "subject": "Alertas y Notificaciones",
+    "from": "Bancolombia <alertasynotificaciones@ayn.notificacionesbancolombia.com>",
+    "date": "Thu, 08 Oct 2026 12:30:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@ayn.notificacionesbancolombia.com; spf=pass; dmarc=pass",
+    "text": "Bancolombia: Persona Prueba pagaste $18.500,00 por codigo QR desde tu cuenta *0000 a la llave *0000 el 08/10/2026 a las 12:30. Con codigo QR es facil y de una. Dudas al 018000000000.",
+    "message_id": "<fx-bancolombia-pago-qr@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "leido",
+    "datos": {
+      "confianza": "regla",
+      "banco": "bancolombia",
+      "tipo": "pago",
+      "sentido": "salida",
+      "monto": 18500,
+      "comercio": "Pago por QR",
+      "fecha": "2026-10-08",
+      "hora": "12:30",
+      "medio": "cuenta"
+    }
+  }
+}

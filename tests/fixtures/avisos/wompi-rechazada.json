@@ -1,0 +1,15 @@
+{
+  "descripcion": "Transacción rechazada",
+  "aviso": {
+    "subject": "Transacción RECHAZADA en TIENDA PRUEBA - ref. W0000-0001",
+    "from": "Wompi <no-reply@wompi.co>",
+    "date": "Tue, 06 Oct 2026 14:31:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@wompi.co; spf=pass; dmarc=pass",
+    "text": "Tu pago no pudo procesarse. Valor: COP $129,900.",
+    "message_id": "<fx-wompi-rechazada@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "ignorado",
+    "motivo": "transaccion_rechazada"
+  }
+}

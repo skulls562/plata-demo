@@ -1,0 +1,15 @@
+{
+  "descripcion": "Mensaje con $ pero sin verbo conocido: lo decide la IA",
+  "aviso": {
+    "subject": "Alertas y Notificaciones",
+    "from": "Bancolombia <alertasynotificaciones@ayn.notificacionesbancolombia.com>",
+    "date": "Tue, 06 Oct 2026 09:00:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@ayn.notificacionesbancolombia.com; spf=pass; dmarc=pass",
+    "text": "Tu cupo disponible es $1.000.000 y tu pago mínimo es $50.000.",
+    "message_id": "<fx-bancolombia-saldo-necesita-ia@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "necesita_ia",
+    "banco": "bancolombia"
+  }
+}

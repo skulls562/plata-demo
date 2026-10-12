@@ -1,0 +1,25 @@
+{
+  "descripcion": "El cuerpo trae fecha pero no hora: la hora sale de la cabecera Date (Bogotá)",
+  "aviso": {
+    "subject": "Alertas y Notificaciones",
+    "from": "Bancolombia <alertasynotificaciones@ayn.notificacionesbancolombia.com>",
+    "date": "Tue, 06 Oct 2026 16:10:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@ayn.notificacionesbancolombia.com; spf=pass; dmarc=pass",
+    "text": "Bancolombia: Compraste $9.900,00 en CAFE SINTETICO con tu T.Deb *0000, el 06/10/2026.",
+    "message_id": "<fx-bancolombia-sin-hora@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "leido",
+    "datos": {
+      "confianza": "regla",
+      "banco": "bancolombia",
+      "tipo": "compra",
+      "sentido": "salida",
+      "monto": 9900,
+      "comercio": "CAFE SINTETICO",
+      "fecha": "2026-10-06",
+      "hora": "16:10",
+      "medio": "debito"
+    }
+  }
+}

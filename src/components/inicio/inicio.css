@@ -1,0 +1,76 @@
+/* Inicio: composición propia con los tokens de globals.css. Prefijo `in-` para no chocar con otras páginas. */
+.in-bloque { margin-top: var(--e-7); }
+.in-cab { display: flex; justify-content: space-between; align-items: baseline; gap: var(--e-3); flex-wrap: wrap; margin-bottom: var(--e-4); }
+.in-cab h2 { font-size: var(--t-lg); letter-spacing: -0.02em; font-weight: 600; }
+.in-enlace { min-height: 44px; display: inline-flex; align-items: center; color: var(--texto-2); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--linea-2); }
+.in-enlace:hover { color: var(--texto); text-decoration-color: var(--texto-3); }
+
+/* Héroe: cifra gigante a la izquierda; semáforo, puntaje y colchón a la derecha */
+.in-hero { display: grid; gap: var(--e-6); align-items: center; }
+.in-hero h1 { font-size: 1.15rem; font-weight: 500; color: var(--texto-2); }
+.in-hero .gigante { margin-top: var(--e-2); }
+.in-hero-lado { display: flex; gap: var(--e-5); align-items: center; flex-wrap: wrap; }
+.in-acciones { display: flex; gap: var(--e-3); flex-wrap: wrap; margin-top: var(--e-5); }
+@media (min-width: 900px) { .in-hero { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); } }
+/* Desglose de «hoy puedes gastar» (cuentas o ingreso) y aviso de saldo viejo */
+.in-base-hoy { display: flex; gap: var(--e-2); align-items: baseline; flex-wrap: wrap; margin-top: var(--e-3); color: var(--texto-2); font-size: 0.92rem; max-width: 62ch; }
+.in-base-hoy > span:last-child { flex: 1 1 24ch; min-width: 0; }
+.in-saldo-viejo { margin-top: var(--e-3); max-width: 62ch; }
+
+/* Mi plata: saldo manda; deuda y mínimos al lado; el vencimiento cruza abajo */
+.in-plata { display: grid; gap: var(--e-3); }
+.in-plata > * { min-width: 0; }
+@media (min-width: 900px) {
+  .in-plata { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr) minmax(0, 1fr); grid-template-areas: "saldo deuda minimos" "saldo venc venc"; }
+  .in-saldo { grid-area: saldo; }
+  .in-deuda { grid-area: deuda; }
+  .in-minimos { grid-area: minimos; }
+  .in-venc { grid-area: venc; }
+}
+.in-venc-fila { display: flex; align-items: center; justify-content: space-between; gap: var(--e-4); flex-wrap: wrap; }
+.in-venc-fila p { margin: 0; }
+.in-venc-nombre { font-size: var(--t-lg); letter-spacing: -0.02em; font-weight: 600; }
+.in-neto { margin-top: var(--e-4); padding-top: var(--e-3); border-top: 1px solid var(--linea); display: flex; justify-content: space-between; gap: var(--e-3); flex-wrap: wrap; }
+
+/* Dos columnas desiguales */
+.in-dos { display: grid; gap: var(--e-4); }
+.in-dos > * { min-width: 0; }
+@media (min-width: 900px) {
+  .in-dos.a { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); }
+  .in-dos.b { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
+  .in-dos.c { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); }
+}
+
+/* Ritmo del mes */
+.in-ritmo-cifras { display: grid; gap: var(--e-4); grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); margin-bottom: var(--e-5); }
+.in-ritmo-pie { display: flex; justify-content: space-between; gap: var(--e-3); flex-wrap: wrap; margin-top: var(--e-2); }
+
+/* Listas con filas finas */
+.in-lista { list-style: none; padding: 0; margin: 0; }
+.in-lista > li { display: flex; align-items: center; justify-content: space-between; gap: var(--e-4); padding: var(--e-3) 0; min-width: 0; }
+.in-lista > li + li { border-top: 1px solid var(--linea); }
+.in-lista .quien { min-width: 0; }
+.in-lista .quien p { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.in-lista .cuanto { text-align: right; flex: none; }
+.in-cat { display: grid; gap: var(--e-2); padding: var(--e-3) 0; }
+.in-cat + .in-cat { border-top: 1px solid var(--linea); }
+.in-cat-cab { display: flex; justify-content: space-between; gap: var(--e-3); align-items: baseline; }
+
+/* Recomendaciones */
+.in-rec { padding: var(--e-4) 0; }
+.in-rec + .in-rec { border-top: 1px solid var(--linea); }
+.in-rec h3 { font-size: var(--t-md); letter-spacing: -0.02em; font-weight: 600; line-height: 1.2; margin: var(--e-1) 0 var(--e-2); }
+.in-rec.primera h3 { font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.1; letter-spacing: -0.03em; }
+.in-porque { color: var(--texto-2); max-width: 64ch; }
+.in-porque b { font-family: var(--font-geist-mono), ui-monospace, monospace; font-weight: 500; font-size: var(--t-xs); color: var(--texto-3); margin-right: var(--e-2); }
+
+/* Calendario compacto: menos aire para que las celdas de 44 px quepan en 390 px */
+.in-cal { padding-inline: var(--e-2); }
+@media (min-width: 640px) { .in-cal { padding-inline: var(--e-4); } }
+
+.in-nota { margin-top: var(--e-7); }
+
+/* El saldo manda sin desbordar la tarjeta */
+.in-saldo .ui-est-cifra { font-size: clamp(1.8rem, 6vw, 3.6rem); line-height: 0.95; letter-spacing: -0.05em; }
+.in-plata { align-items: start; }
+@media (min-width: 900px) { .in-saldo { align-self: stretch; } }

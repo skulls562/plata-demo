@@ -1,0 +1,38 @@
+{
+  "name": "plata-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/next-demo.mjs dev -H 127.0.0.1 -p 3010",
+    "build": "node scripts/next-demo.mjs build",
+    "start": "node scripts/next-demo.mjs start -H 127.0.0.1 -p 3010",
+    "lint": "eslint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "demo": "node --disable-warning=ExperimentalWarning scripts/ejecutar-ts.mjs scripts/sembrar-demo.ts",
+    "e2e": "playwright test",
+    "pin":"node --env-file-if-exists=.env.local --disable-warning=ExperimentalWarning --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/crear-pin.ts",
+    "recategorizar": "node --disable-warning=ExperimentalWarning scripts/ejecutar-ts.mjs scripts/recategorizar.ts",
+    "gmail-clave":"node --disable-warning=ExperimentalWarning --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/guardar-clave-gmail.ts",
+    "historial":"node --env-file-if-exists=.env.local --disable-warning=ExperimentalWarning --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/importar-historial.ts"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "recharts": "^3.10.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^24.19.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.0",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vitest": "^5.0.3"
+  }
+}

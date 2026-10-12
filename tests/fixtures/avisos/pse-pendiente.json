@@ -1,0 +1,15 @@
+{
+  "descripcion": "PSE pendiente",
+  "aviso": {
+    "subject": "PSE - Transacción Pendiente",
+    "from": "PSE <notificaciones@achcolombia.com.co>",
+    "date": "Mon, 05 Oct 2026 10:12:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@achcolombia.com.co; spf=pass; dmarc=pass",
+    "text": "Estado: Pendiente\nValor: $85.000,00\nEmpresa: EMPRESA PRUEBA",
+    "message_id": "<fx-pse-pendiente@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "ignorado",
+    "motivo": "transaccion_pendiente"
+  }
+}

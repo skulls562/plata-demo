@@ -1,0 +1,15 @@
+{
+  "descripcion": "Publicidad del mismo remitente (sin $)",
+  "aviso": {
+    "subject": "Alertas y Notificaciones",
+    "from": "Bancolombia <alertasynotificaciones@ayn.notificacionesbancolombia.com>",
+    "date": "Tue, 06 Oct 2026 09:00:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@ayn.notificacionesbancolombia.com; spf=pass; dmarc=pass",
+    "text": "Descubre los beneficios de tu cuenta y abre tu CDT hoy. Conoce más en nuestra página.",
+    "message_id": "<fx-bancolombia-publicidad@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "ignorado",
+    "motivo": "publicidad"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "descripcion": "Sin cabecera Authentication-Results: se crea con verificado = 0",
+  "aviso": {
+    "subject": "Alertas y Notificaciones",
+    "from": "Bancolombia <alertasynotificaciones@ayn.notificacionesbancolombia.com>",
+    "date": "Tue, 06 Oct 2026 13:59:40 -0500",
+    "text": "Bancolombia: Compraste $14.730,00 en TIENDA D1 ANT MARINI con tu T.Deb *0000, el 06/10/2026 a las 13:59.",
+    "message_id": "<fx-bancolombia-sin-auth@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "leido",
+    "datos": {
+      "confianza": "regla",
+      "banco": "bancolombia",
+      "tipo": "compra",
+      "sentido": "salida",
+      "monto": 14730,
+      "comercio": "TIENDA D1 ANT MARINI",
+      "fecha": "2026-10-06",
+      "hora": "13:59",
+      "medio": "debito"
+    }
+  },
+  "autenticacion": "desconocido"
+}

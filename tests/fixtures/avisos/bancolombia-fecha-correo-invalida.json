@@ -1,0 +1,25 @@
+{
+  "descripcion": "Cabecera Date ilegible: se usa el reloj (ahora)",
+  "aviso": {
+    "subject": "Alertas y Notificaciones",
+    "from": "Bancolombia <alertasynotificaciones@ayn.notificacionesbancolombia.com>",
+    "date": "fecha rota",
+    "auth_results": "mx.google.com; dkim=pass header.i=@ayn.notificacionesbancolombia.com; spf=pass; dmarc=pass",
+    "text": "Bancolombia: Compraste $7.000,00 en KIOSCO PRUEBA con tu T.Deb *0000.",
+    "message_id": "<fx-bancolombia-fecha-correo-invalida@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "leido",
+    "datos": {
+      "confianza": "regla",
+      "banco": "bancolombia",
+      "tipo": "compra",
+      "sentido": "salida",
+      "monto": 7000,
+      "comercio": "KIOSCO PRUEBA",
+      "fecha": "2026-10-15",
+      "hora": "12:00",
+      "medio": "debito"
+    }
+  }
+}

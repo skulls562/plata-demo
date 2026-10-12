@@ -1,0 +1,32 @@
+# dependencies and builds
+node_modules/
+.next/
+.next-dev/
+out/
+build/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+
+# private runtime state
+.env*
+!.env.example
+data/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.bak
+*.pem
+*.tmp
+
+# test artifacts
+test-results/
+playwright-report/
+blob-report/
+
+# editors and platforms
+.DS_Store
+.vercel/
+*.log
+

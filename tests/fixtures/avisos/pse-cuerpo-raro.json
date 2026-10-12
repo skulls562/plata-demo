@@ -1,0 +1,15 @@
+{
+  "descripcion": "PSE aprobada con cuerpo que no se puede leer: necesita IA",
+  "aviso": {
+    "subject": "PSE - Transacción Aprobada",
+    "from": "PSE <notificaciones@achcolombia.com.co>",
+    "date": "Mon, 05 Oct 2026 10:13:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@achcolombia.com.co; spf=pass; dmarc=pass",
+    "text": "Tu operación fue exitosa. Gracias por usar el servicio.",
+    "message_id": "<fx-pse-cuerpo-raro@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "necesita_ia",
+    "banco": "pse"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "descripcion": "Transferencia a una cuenta sin nombre de destinatario",
+  "aviso": {
+    "subject": "Alertas y Notificaciones",
+    "from": "Bancolombia <alertasynotificaciones@ayn.notificacionesbancolombia.com>",
+    "date": "Wed, 07 Oct 2026 19:40:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@ayn.notificacionesbancolombia.com; spf=pass; dmarc=pass",
+    "text": "Bancolombia: Transferiste $300.000,00 desde tu cuenta *0000 a la cuenta *0000 el 07/10/2026 a las 19:40. ¿Dudas? Llamanos al 018000000000.",
+    "message_id": "<fx-bancolombia-transferencia-cuenta@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "leido",
+    "datos": {
+      "confianza": "regla",
+      "banco": "bancolombia",
+      "tipo": "transferencia",
+      "sentido": "salida",
+      "monto": 300000,
+      "comercio": "Transferencia a cuenta",
+      "fecha": "2026-10-07",
+      "hora": "19:40",
+      "medio": "cuenta"
+    }
+  }
+}

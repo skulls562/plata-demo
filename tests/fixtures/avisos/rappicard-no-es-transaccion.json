@@ -1,0 +1,28 @@
+{
+  "descripcion": "La IA dice que no es una transacción (recordatorio de pago)",
+  "aviso": {
+    "subject": "Recuerda tu pago",
+    "from": "RappiCard <no-reply@mail.rappicard.co>",
+    "date": "Tue, 06 Oct 2026 08:00:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@mail.rappicard.co; dmarc=pass",
+    "text": "Recuerda que tu pago mínimo de $120.000 vence el 20/10/2026.",
+    "message_id": "<fx-rappicard-no-es-transaccion@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "necesita_ia",
+    "banco": "rappicard"
+  },
+  "ia": {
+    "es_transaccion": false,
+    "estado": "desconocido",
+    "tipo": "pago",
+    "monto_texto": "$120.000",
+    "comercio": "desconocido",
+    "fecha_texto": null,
+    "hora_texto": null,
+    "medio": null
+  },
+  "esperado_ia": {
+    "ignorar": "no_es_transaccion"
+  }
+}

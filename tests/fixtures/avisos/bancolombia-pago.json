@@ -1,0 +1,25 @@
+{
+  "descripcion": "Pago de factura desde la cuenta",
+  "aviso": {
+    "subject": "Alertas y Notificaciones",
+    "from": "Bancolombia <alertasynotificaciones@ayn.notificacionesbancolombia.com>",
+    "date": "Sat, 03 Oct 2026 09:30:05 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@ayn.notificacionesbancolombia.com; spf=pass; dmarc=pass",
+    "text": "Bancolombia: Pagaste $120.000,00 a EPM PAGOS en tu cuenta *0000, el 03/10/2026 a las 09:30.",
+    "message_id": "<fx-bancolombia-pago@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "leido",
+    "datos": {
+      "confianza": "regla",
+      "banco": "bancolombia",
+      "tipo": "pago",
+      "sentido": "salida",
+      "monto": 120000,
+      "comercio": "EPM PAGOS",
+      "fecha": "2026-10-03",
+      "hora": "09:30",
+      "medio": "cuenta"
+    }
+  }
+}

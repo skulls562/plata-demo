@@ -1,0 +1,25 @@
+{
+  "descripcion": "Compra con tarjeta crédito",
+  "aviso": {
+    "subject": "Alertas y Notificaciones",
+    "from": "Bancolombia <alertasynotificaciones@ayn.notificacionesbancolombia.com>",
+    "date": "Mon, 05 Oct 2026 20:15:10 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@ayn.notificacionesbancolombia.com; spf=pass; dmarc=pass",
+    "text": "Bancolombia: Compraste $85.900,00 en AMAZON PRIME VIDEO con tu T.Cred *0000, el 05/10/2026 a las 20:15.",
+    "message_id": "<fx-bancolombia-compra-credito@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "leido",
+    "datos": {
+      "confianza": "regla",
+      "banco": "bancolombia",
+      "tipo": "compra",
+      "sentido": "salida",
+      "monto": 85900,
+      "comercio": "AMAZON PRIME VIDEO",
+      "fecha": "2026-10-05",
+      "hora": "20:15",
+      "medio": "credito"
+    }
+  }
+}

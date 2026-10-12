@@ -1,0 +1,36 @@
+{
+  "descripcion": "RappiCard siempre pasa por la IA; la IA responde bien",
+  "aviso": {
+    "subject": "Compra aprobada",
+    "from": "RappiCard <no-reply@mail.rappicard.co>",
+    "date": "Tue, 06 Oct 2026 19:20:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@mail.rappicard.co; dmarc=pass",
+    "text": "Hola. Se aprobó tu compra por $45.000 en COMERCIO PRUEBA con tu tarjeta terminada en 0000 el 06/10/2026 a las 19:20.",
+    "message_id": "<fx-rappicard-compra@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "necesita_ia",
+    "banco": "rappicard"
+  },
+  "ia": {
+    "es_transaccion": true,
+    "estado": "aprobada",
+    "tipo": "compra",
+    "monto_texto": "$45.000",
+    "comercio": "COMERCIO PRUEBA",
+    "fecha_texto": "06/10/2026",
+    "hora_texto": "19:20",
+    "medio": "credito"
+  },
+  "esperado_ia": {
+    "banco": "rappicard",
+    "tipo": "compra",
+    "sentido": "salida",
+    "monto": 45000,
+    "comercio": "COMERCIO PRUEBA",
+    "fecha": "2026-10-06",
+    "hora": "19:20",
+    "medio": "credito",
+    "confianza": "ia"
+  }
+}

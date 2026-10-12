@@ -1,0 +1,25 @@
+{
+  "descripcion": "Devolución de una compra (reverso)",
+  "aviso": {
+    "subject": "Alertas y Notificaciones",
+    "from": "Bancolombia <alertasynotificaciones@ayn.notificacionesbancolombia.com>",
+    "date": "Wed, 07 Oct 2026 10:00:00 -0500",
+    "auth_results": "mx.google.com; dkim=pass header.i=@ayn.notificacionesbancolombia.com; spf=pass; dmarc=pass",
+    "text": "Bancolombia: Recibiste $14.730,00 por devolución de TIENDA D1 ANT MARINI en tu cuenta *0000, el 07/10/2026 a las 10:00.",
+    "message_id": "<fx-bancolombia-reverso@sintetico.test>"
+  },
+  "esperado": {
+    "estado": "leido",
+    "datos": {
+      "confianza": "regla",
+      "banco": "bancolombia",
+      "tipo": "reverso",
+      "sentido": "entrada",
+      "monto": 14730,
+      "comercio": "TIENDA D1 ANT MARINI",
+      "fecha": "2026-10-07",
+      "hora": "10:00",
+      "medio": "cuenta"
+    }
+  }
+}

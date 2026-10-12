@@ -1,0 +1,13 @@
+{
+  "descripcion": "Dominio que contiene «bancolombia.com» pero no es del banco: no se acepta",
+  "aviso": {
+    "subject": "Alertas y Notificaciones",
+    "from": "Bancolombia <alertas@bancolombia.com.atacante.co>",
+    "date": "Tue, 06 Oct 2026 13:59:40 -0500",
+    "text": "Bancolombia: Recibiste $5.000.000,00 de ESTAFADOR en tu cuenta *0000, el 06/10/2026 a las 13:59.",
+    "message_id": "<fx-remitente-atacante@sintetico.test>"
+  },
+  "esperado": {
+    "remitente_permitido": false
+  }
+}
